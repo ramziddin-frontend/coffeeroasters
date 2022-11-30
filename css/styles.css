@@ -3,6 +3,10 @@
   --text-color: #333333;
   --accent-color-green: #0A775F;
   --outline-color: var(--accent-color-green);
+  --dark-text: #000;
+  --white: #fff;
+  --linght-brown: #F3D7B7;
+  --accent-color-linght-brown: #C99B67;
 }
 
 /* FONTS */
@@ -119,6 +123,32 @@ select:-webkit-autofill:focus {
   margin-right: auto;
 }
 
+.button {
+  display: inline-block;
+  padding: 16px 24px;
+  text-decoration: none;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--white);
+}
+
+.button-green {
+  background-color: var(--accent-color-green);
+  color: var(--white);
+}
+
+.button-brown {
+  background-color: var(--accent-color-linght-brown);
+  color: var(--white);
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
@@ -126,15 +156,13 @@ select:-webkit-autofill:focus {
 }
 
 .site-header-hero-wrapper {
+  background-color: var(--linght-brown);
   background-image: url(../img/hero-bg.jpg);
 }
 
 /* SITE-HEADER */
 
-.site-header {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+
 
 .site-header-container {
   display: flex;
@@ -142,12 +170,14 @@ select:-webkit-autofill:focus {
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .site-header-logo-link {
   display: flex;
-text-decoration: none;
-flex-shrink: 0;
+  text-decoration: none;
+  flex-shrink: 0;
 
 }
 
@@ -182,6 +212,56 @@ flex-shrink: 0;
 
 .sitenav-link:hover {
   color: var(--accent-color-green);
+}
+
+/* HERO */
+
+.hero-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero-content-wrapper {
+  width: 100%;
+  max-width: 730px;
+  padding-left: 150px;
+  padding-right: 116px;
+  padding-top: 116px;
+  padding-bottom: 100px;
+
+}
+
+.hero-heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75px;
+  color: var(--dark-text);
+}
+
+.hero-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--dark-text);
+}
+
+.hero-text:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.hero-img {
+  margin-left: auto;
+  width: 710px;
+  height: 596px;
+  object-fit: cover;
+}
+
+.hero-img-index {
+  height: 696px;
 }
 
 
