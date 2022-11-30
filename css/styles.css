@@ -147,6 +147,7 @@ select:-webkit-autofill:focus {
 .site-header-logo-link {
   display: flex;
 text-decoration: none;
+flex-shrink: 0;
 
 }
 
