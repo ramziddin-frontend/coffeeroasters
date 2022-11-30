@@ -147,6 +147,7 @@ select:-webkit-autofill:focus {
 .site-header-logo-link {
   display: flex;
 text-decoration: none;
+
 }
 
 .site-header-logo-img {
@@ -175,6 +176,7 @@ text-decoration: none;
   letter-spacing: 1px;
   color: var(--text-color);
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .sitenav-link:hover {
